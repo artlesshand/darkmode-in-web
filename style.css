@@ -1,0 +1,60 @@
+body,button {
+	font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+	--bg-color: #FFF;
+	--title-color: #000;
+	--text-color: #333;
+	--btn-bg: #000;
+	--btn-color: #FFF;
+}
+
+body {
+	padding: 1em;
+	/* Variable */
+	background-color: var(--bg-color);
+}
+
+h1 {
+	font-size: 3em;
+	letter-spacing: -3px;
+	/* Variable */
+	color: var(--title-color);
+}
+
+div {
+	max-width: 800px;
+	margin: 200px auto 0;
+	/* Variable */
+	color: var(--text-color);
+}
+
+button {
+	color: #FFF;
+	border: none;
+	font-size: 1em;
+	cursor: pointer;
+	font-weight: 600;
+	padding: 1.5em 2em;
+	border-radius: 100px;
+	/* Variable */	
+	color: var(--btn-color);
+	background-color: var(--btn-bg);
+}
+
+button:hover {
+	background-color: #777;
+}
+
+@media (prefers-color-scheme: dark) {
+	
+	:root {
+		--bg-color: #333;
+		--title-color: #CCC;
+		--text-color: #999;
+		--btn-bg: #EEE;
+		--btn-color: #000;
+	}
+
+}
